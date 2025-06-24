@@ -57,11 +57,11 @@
 
 
     /* Desktop default */
-.nav_links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
+    .nav_links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
 
     .nav_links li a {
       background-color: #3c096c;
@@ -276,28 +276,27 @@
 
 
       .nav_links li a {
-         background-color:transparent;
-      color: #eef4ed;
-      border: none;
-      padding: 25px 16px;
-      border: none;
-      box-shadow: none;
-      box-shadow: none;
-      border-radius:6px;
-      cursor: pointer;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      margin-right: 10px;
-      }
-      
-      .nav_links li a:hover {
         background-color: transparent;
+        color: #eef4ed;
+        border: none;
+        padding: 25px 16px;
+        border: none;
+        box-shadow: none;
+        box-shadow: none;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 10px;
+      }
+
+      .nav_links li a:hover {
         color: #00BFFF;
       }
-       
-     .fome {
-      margin-right: 20px;
-     }
+
+      .fome {
+        margin-right: 20px;
+      }
 
     }
   </style>
@@ -305,29 +304,30 @@
 
 <body class="text-size">
   <header>
-  <!-- Logo -->
-  <img class="logo" src="Green_Modern_Marketing_Logo-removebg-preview-fotor-2025062319364.png" alt="Logo" />
+    <!-- Logo -->
+    <img class="logo" src="Green_Modern_Marketing_Logo-removebg-preview-fotor-2025062319364.png" alt="Logo" />
 
-  <!-- Navigation Links -->
-  <nav>
-    <ul class="nav_links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Video</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation Links -->
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Contact Button (only visible on desktop) -->
-  <a class="cta" href="#"><button>Contact</button></a>
+    <!-- Contact Button (only visible on desktop) -->
+    <a class="cta" href="#contact"><button>Contact</button></a>
 
-  <!-- Hamburger (only for mobile) -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
+
+    <!-- Hamburger (only for mobile) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
 
 
@@ -335,15 +335,18 @@
     <main>
       <!-- Welcome Section -->
       <section>
+        <section id="home">...</section>
         <div id="highlight-box">
           <h2>Welcome to my portfolio</h2>
           <p>This is where I showcase my best video editing work. Scroll down to watch my latest content and learn more
             about my creative journey.</p>
+          
         </div>
       </section>
 
       <!-- Video Section -->
       <section>
+        <section id="video">...</section>
         <h2 style="text-align: center;font-size: 30px;">My Work</h2>
         <div class="video-gallery">
           <video controls loop autoplay muted>
@@ -358,11 +361,15 @@
           <video controls loop autoplay muted src="new style.mp4"></video>
           <video controls loop autoplay muted src="Sequence 01.mp4"></video>
           <video controls loop autoplay muted src="new.mp4"></video>
+
+          
+
         </div>
       </section>
 
       <!-- About Section -->
       <section class="about-me">
+        <section id="about">...</section>
         <div id="highlight-box">
           <h2>About Me</h2>
           <p>I’m a passionate video editor with over <b class="gep">2 years of experience</b> crafting high-quality
@@ -373,12 +380,15 @@
 
       <!-- Contact Section -->
       <section>
+        <section id="contact">...</section>
         <div id="highlight-box">
           <h2>Contact</h2>
           <p>Let’s turn your ideas into something awesome!</p>
           <p>For edits, collabs, or custom video projects, contact me at <strong>so997100@gmail.com</strong> — I’ll get
             back to you fast!</p>
         </div>
+
+        
 
         <!-- Contact Form -->
         <form method="post" name="contact-form">

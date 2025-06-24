@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Sohel Ali, a creative video editor with experience in editing for social media, podcasts, and branding." />
+  <title>Sohel Ali - Video Editor Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --color: ;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #230044, #140029);
+      color: #eef4ed;
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background-color: #140029;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+
+
+
+    .logo {
+      max-height: 40px;
+      /* try 60px or adjust */
+      width: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    /* Desktop default */
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+    .nav_links li a {
+      background-color: #3c096c;
+      color: #eef4ed;
+      border: none;
+      padding: 8px 16px;
+      border: #6821c4 solid 1px;
+      box-shadow: 0 0 20px rgba(224, 170, 255, 0.2);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      margin-right: 10px;
+
+
+    }
+
+    .nav_links li a:hover {
+      background-color: #00BFFF;
+    }
+
+    button {
+      padding: 9px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgba(0, 136, 169, 0.8);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    .cta button {
+      background-color: #00bfff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      margin-top: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #flex-container {
+      white-space: nowrap;
+    }
+
+
+
+    #highlight-box {
+      margin-top: 5px;
+      background-color: #3c096c;
+      color: #ffffff;
+      border: #6821c4 solid 1px;
+      padding: 16px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(224, 170, 255, 0.3);
+    }
+
+    section {
+      margin-top: 3%;
+    }
+
+    .video-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+    }
+
+
+    video {
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(224, 170, 255, 0.3);
+      border: 1px solid #6821c4;
+    }
+
+    form fieldset {
+      border: 3px solid #e0aaff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(224, 170, 255, 0.3);
+      margin-top: 20px;
+    }
+
+    form input,
+    form textarea {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #e0aaff;
+      width: 60%;
+      margin-top: 5px;
+      box-shadow: 0 0 20px rgba(224, 170, 255, 0.2);
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    a {
+      color: #00BFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .gep {
+      letter-spacing: 1px;
+    }
+
+    .fome {
+      text-align: center;
+    }
+
+    .padding {
+      padding: 20px;
+    }
+
+
+
+
+    @media only screen and (max-width:455px) {
+      .name {
+        font-weight: 900px;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+      }
+
+      video {
+        width: 300px
+      }
+
+      .nav_links {
+        display: none;
+        flex-direction: column;
+        background: #140029;
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        padding: 20px;
+        border-radius: 6px;
+        z-index: 100;
+      }
+
+      .nav_links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+        order: 2;
+        /* Now hamburger will come second */
+      }
+
+      .cta {
+        order: 1;
+        /* Contact button will come first */
+      }
+
+      header {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav_links li a {
+         background-color:transparent;
+      color: #eef4ed;
+      border: none;
+      padding: 25px 16px;
+      border: none;
+      box-shadow: none;
+      box-shadow: none;
+      border-radius:6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      margin-right: 10px;
+      }
+      
+      .nav_links li a:hover {
+        background-color: transparent;
+        color: #00BFFF;
+      }
+    }
+  </style>
+</head>
+
+<body class="text-size">
+  <header>
+  <!-- Logo -->
+  <img class="logo" src="Green_Modern_Marketing_Logo-removebg-preview-fotor-2025062319364.png" alt="Logo" />
+
+  <!-- Navigation Links -->
+  <nav>
+    <ul class="nav_links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Video</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Button (only visible on desktop) -->
+  <a class="cta" href="#"><button>Contact</button></a>
+
+  <!-- Hamburger (only for mobile) -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+
+  <div class="padding">
+    <main>
+      <!-- Welcome Section -->
+      <section>
+        <div id="highlight-box">
+          <h2>Welcome to my portfolio</h2>
+          <p>This is where I showcase my best video editing work. Scroll down to watch my latest content and learn more
+            about my creative journey.</p>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section>
+        <h2 style="text-align: center;font-size: 30px;">My Work</h2>
+        <div class="video-gallery">
+          <video controls loop autoplay muted>
+            <source src="sdkafnsjknfhjew.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls loop autoplay muted>
+            <source src="5 raw.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls loop autoplay muted src="V4.mp4"></video>
+          <video controls loop autoplay muted src="new style.mp4"></video>
+          <video controls loop autoplay muted src="Sequence 01.mp4"></video>
+          <video controls loop autoplay muted src="new.mp4"></video>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-me">
+        <div id="highlight-box">
+          <h2>About Me</h2>
+          <p>I’m a passionate video editor with over <b class="gep">2 years of experience</b> crafting high-quality
+            content for social media, podcasts, and brands. Whether it’s reels, long-form storytelling, or sharp
+            troll-style commentary, I love to make videos that grab attention and keep people watching.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section>
+        <div id="highlight-box">
+          <h2>Contact</h2>
+          <p>Let’s turn your ideas into something awesome!</p>
+          <p>For edits, collabs, or custom video projects, contact me at <strong>so997100@gmail.com</strong> — I’ll get
+            back to you fast!</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form method="post" name="contact-form">
+          <fieldset>
+            <legend>Send a Message</legend>
+            <div class="fome">
+              <div style="margin-top: 10px;">
+                <label for="username">Name</label><br />
+                <input type="text" required pattern="[A-Za-z ]+" name="username" placeholder="Your name"
+                  id="username" />
+              </div>
+
+              <div style="margin-top: 10px;">
+                <label for="email">Email</label><br />
+                <input type="email" required name="email" placeholder="Email" id="email" />
+              </div>
+
+              <div style="margin-top: 10px;">
+                <label for="number">Number</label><br />
+                <input type="tel" required name="number" placeholder="10-digit number" pattern="[0-9]{10}"
+                  id="number" />
+              </div>
+
+              <div style="margin-top: 10px;">
+                <label for="message">Message</label><br />
+                <textarea name="message" required id="message" placeholder="Type your message here" rows="4"
+                  cols="30"></textarea>
+              </div>
+
+              <div style="margin-top: 10px;">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>© 2025 Sohel Ali | Video Editor</p>
+      <a href="https://www.instagram.com/sohel_ali_19/?utm_source=ig_web_button_share_sheet">Instagram</a>
+    </footer>
+  </div>
+</body>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav_links').classList.toggle('active');
+  }
+</script>
+
+
+
+</html>
